@@ -20,8 +20,26 @@
         <button onclick="generatePasswords()">Generate passwords</button>
       </div>
       <div class="passwords">
-        <div class="result" id="pass1"></div>
-        <div class="result" id="pass2"></div>
+        <div>
+          <div class="result" id="pass1"></div>
+          <button
+            class="copy-btn"
+            id="copy-btn1"
+            onclick="copyToClipboard('pass1')"
+          >
+            Click to copy
+          </button>
+        </div>
+        <div>
+          <div class="result" id="pass2"></div>
+          <button
+            class="copy-btn"
+            id="copy-btn2"
+            onclick="copyToClipboard('pass2')"
+          >
+            Click to copy
+          </button>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
